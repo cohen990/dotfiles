@@ -1,0 +1,44 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Dan Cohen
+	email = dan.cohen@codurance.com
+[alias]
+	s = status
+	b = branch
+	pu = pull upstream
+	pl = pull --rebase
+	rum = remote update
+	p = push
+	c = !git add -A && git commit
+	cm = !git add -A && git commit -m
+	g = !git gui
+	co = checkout
+	ecg = !git config --global -e
+	ec = config -e
+	cob = checkout -b
+	save = !git add -A && git commit -m 'SAVEPOINT'
+	undo = reset HEAD~1 --mixed
+	amend = !git add -A && git commit -a --amend
+	wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+	bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
+	l = "!f() { git --no-pager log -${1-5}; }; f"
+	r = rebase
+	pseto = "!f() { git rev-parse --abbrev-ref HEAD | xargs -r git push --set-upstream origin; }; f"
+	lol = "!f() { git --no-pager log --pretty=tformat:'%Cred%h%Creset %Cgreen(%cr)%Creset %s  %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --graph -${1-10}; }; f"
+	mpr = "!f() { git checkout ${2-master} && git remote update && git pull upstream ${2-master} && git fetch upstream pull/$1/head:pr-$1 && git merge --no-ff --no-commit pr-$1 && git branch -D pr-$1; }; f"
+ 
+[push]
+	default = simple
+[gc]
+	auto = 0
+[diff]
+	tool = p4mergetool
+[difftool "p4mergetool"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
+[merge]
+	tool = p4mergetool
+[mergetool "p4mergetool"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
+	trustExitCode = false
+[mergetool]
+	keepBackup = false
