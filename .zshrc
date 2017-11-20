@@ -85,3 +85,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias fix=fuck
 eval $(thefuck --alias)
+
+export PATH="$PATH:$HOME/.cargo/bin"
