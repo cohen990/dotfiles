@@ -2,7 +2,7 @@
 let mapleader = ","
 nmap <leader>= :t.\|s/./=/g\|noh<CR>
 nmap <leader>- :t.\|s/./-/g\|noh<CR>
-nmap <leader>` :%s/<span .*">/```\r/g|%s&</span>&\r```&g<CR>
+nmap <leader>` :%s/<span .*">/```\\r/g\|%s&</span>&\\r```&g<CR>
 
 set number
 set expandtab
