@@ -13,4 +13,6 @@ set cursorline
 set wildmenu
 set lazyredraw
 set hlsearch
+set ignorecase
+
 syntax enable
