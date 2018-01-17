@@ -9,6 +9,7 @@
 	pl = pull --rebase
 	rum = remote update
 	p = push
+	please = push --force-with-lease
 	c = !git add -A && git commit
 	cm = !git add -A && git commit -m
 	g = !git gui
