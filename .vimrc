@@ -24,4 +24,4 @@ function! s:DiffWithSaved()
   diffthis
   exe "setlocal bt=nofile bh=wipe nobl noswf ro ft=" . filetype
 endfunction
-com! ds call s:DiffWithSaved()
+com! Ds call s:DiffWithSaved()
