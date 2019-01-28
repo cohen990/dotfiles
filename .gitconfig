@@ -29,19 +29,21 @@
 	lolmaster = "!f() { git --no-pager log --pretty=tformat:'%Cred%h%Creset %Cgreen(%cr)%Creset %s  %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --graph -${1-10}; ...master }; f"
 	mpr = "!f() { git checkout ${2-master} && git remote update && git pull upstream ${2-master} && git fetch upstream pull/$1/head:pr-$1 && git merge --no-ff --no-commit pr-$1 && git branch -D pr-$1; }; f"
 	reset-to = "!f() { git checkout ${2-master} && git remote update && git pull ${1-origin} ${2-master} && git bclean && git gc; }; f"
- 
+	rto = !git reset-to
+	careclean = clean -dfx -e "*ncrunchsolution*" -e "*DotSettings*" -e "**/*.ncrunchproject" -e "**/*.csproj.user"
 [push]
 	default = simple
 [gc]
 	auto = 0
 [diff]
-	tool = p4mergetool
-[difftool "p4mergetool"]
-	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
+	tool = bc3
+[difftool "bc3"]
+	path = C:\\Program Files\\Beyond Compare 4\\bcomp.exe
+[gui]
+[user]
+	name = Dan Cohen
+	email = dan@devshell.co.uk
 [merge]
-	tool = p4mergetool
-[mergetool "p4mergetool"]
-	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
-	trustExitCode = false
-[mergetool]
-	keepBackup = false
+	tool = bc3
+[mergetool "bc3"]
+	path = C:\\Program Files\\Beyond Compare 4\\bcomp.exe
