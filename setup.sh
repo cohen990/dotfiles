@@ -1,5 +1,5 @@
 #!/bin/bash
 
-ln -fs $DIR/.gitconfig ~/.gitconfig
-ln -fs $DIR/.vimrc ~/.vimrc
-ln -fs $DIR/.zshrc ~/.zshrc
+
+ln -fs `pwd`/.gitconfig ~/.gitconfig
+ln -fs `pwd`/.vimrc ~/.vimrc
