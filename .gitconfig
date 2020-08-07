@@ -49,3 +49,5 @@
 	path = C:\\Program Files\\Beyond Compare 4\\bcomp.exe
 [init]
 	defaultBranch = main
+[core]
+	editor = vim
