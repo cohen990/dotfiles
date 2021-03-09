@@ -4,9 +4,13 @@ alias tf=terraform
 alias c="code ."
 alias fixtime="sudo ntpd -qg"
 alias cci=circleci
+alias icat="kitty +kitten icat --align left"
 
 setxkbmap -layout gb
 setxkbmap -option 'caps:escape'
+
+xset b off
+xset b 0 0 0
 
 export AWS_REGION=eu-west-1
 

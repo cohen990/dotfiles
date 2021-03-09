@@ -14,6 +14,7 @@ set wildmenu
 set lazyredraw
 set hlsearch
 set ignorecase
+set vb t_vb=
 
 syntax enable
 
