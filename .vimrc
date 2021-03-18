@@ -16,6 +16,9 @@ set hlsearch
 set ignorecase
 set vb t_vb=
 
+autocmd FileType gitcommit set textwidth=72
+autocmd FileType gitcommit set colorcolumn=73
+
 syntax enable
 
 function! s:DiffWithSaved()

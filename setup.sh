@@ -3,6 +3,7 @@
 
 ln -fs `pwd`/.gitconfig ~/.gitconfig
 ln -fs `pwd`/.vimrc ~/.vimrc
+ln -fs `pwd`/.git-commit-template ~/.git-commit-template
 
 mkdir ~/.config
 mkdir ~/.config/i3

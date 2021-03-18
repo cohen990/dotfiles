@@ -37,19 +37,11 @@
 	auto = 0
 [diff]
 	tool = bc3
-[difftool "bc3"]
-	path = C:\\Program Files\\Beyond Compare 4\\bcomp.exe
-[gui]
-[user]
-	name = Dan Cohen
-	email = dan@devshell.co.uk
-[merge]
-	tool = bc3
-[mergetool "bc3"]
-	path = C:\\Program Files\\Beyond Compare 4\\bcomp.exe
 [init]
 	defaultBranch = main
 [core]
 	editor = vim
 [pull]
 	rebase = true
+[commit]
+  template = ~/.git-commit-template

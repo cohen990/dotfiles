@@ -5,6 +5,7 @@ alias c="code ."
 alias fixtime="sudo ntpd -qg"
 alias cci=circleci
 alias icat="kitty +kitten icat --align left"
+alias iclip="xclip -sel clipboard -t image/png"
 
 setxkbmap -layout gb
 setxkbmap -option 'caps:escape'
