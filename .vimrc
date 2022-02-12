@@ -19,6 +19,8 @@ set vb t_vb=
 autocmd FileType gitcommit set textwidth=72
 autocmd FileType gitcommit set colorcolumn=73
 
+filetype plugin indent on
+
 syntax enable
 
 function! s:DiffWithSaved()
@@ -28,4 +30,5 @@ function! s:DiffWithSaved()
   diffthis
   exe "setlocal bt=nofile bh=wipe nobl noswf ro ft=" . filetype
 endfunction
+
 com! Ds call s:DiffWithSaved()

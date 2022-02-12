@@ -1,7 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
-	name = Dan Cohen
-	email = dan.cohen@cazoo.com
+	name = Sammie Cohen
+	email = samantha.cohen@cazoo.com
 [alias]
 	s = status
 	b = branch
