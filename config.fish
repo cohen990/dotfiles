@@ -10,6 +10,7 @@ alias iclip="xclip -sel clipboard -t image/png"
 alias splitpipe="tee (tty)"
 alias z=zoxide
 alias togit="cd /home/git"
+alias dn=dotnet
 
 function pw
     ls $argv.puml | entr -s "plantuml $argv.puml && icat $argv.png" && iclip $argv.png
