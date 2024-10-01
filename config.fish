@@ -11,9 +11,14 @@ alias splitpipe="tee (tty)"
 alias z=zoxide
 alias togit="cd /home/git"
 alias dn=dotnet
+alias bat=batcat
 
 function pw
     ls $argv.puml | entr -s "plantuml $argv.puml && icat $argv.png" && iclip $argv.png
+end
+
+function struct
+    docker run -it --rm -p 8080:8080 -v $(pwd):/usr/local/structurizr --name structurizr structurizr/lite
 end
 
 setxkbmap -layout gb
@@ -26,6 +31,8 @@ export AWS_REGION=eu-west-1
 export AWS_DEFAULT_REGION=eu-west-1
 
 export PATH="/home/sammie/.local/bin:$PATH"
+export PATH="/home/sammiecohen/.local/bin:$PATH"
+export PATH="$HOME/.tfenv/bin:$PATH"
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
@@ -42,4 +49,6 @@ test -s "$HOME/.config/envman/load.fish"; and source "$HOME/.config/envman/load.
 
 # Inits
 zoxide init fish | source
-status is-interactive; and pyenv init --path | source
+
+alias togglecaps="xdotool key Caps_Lock"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"

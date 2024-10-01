@@ -15,6 +15,7 @@ set lazyredraw
 set hlsearch
 set ignorecase
 set vb t_vb=
+set autoindent
 
 autocmd FileType gitcommit set textwidth=72
 autocmd FileType gitcommit set colorcolumn=73

@@ -1,7 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
 	name = Samantha Cohen
-	email = samanthacohen294@gmail.com
+	email = samantha.cohen@ovo.com
 [alias]
 	s = status
 	b = branch
@@ -47,3 +47,6 @@
     template = ~/.git-commit-template
 [help]
     autocorrect = 1
+[pager]
+    branch = false
+    diff = true
