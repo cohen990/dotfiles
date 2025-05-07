@@ -1,0 +1,4 @@
+[tools]
+node = "24.0.0"
+"npm:@mermaid-js/mermaid-cli" = "latest"
+lua = "5.1"

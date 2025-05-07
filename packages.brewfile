@@ -1,0 +1,25 @@
+# Brewfile
+
+# Formulae
+brew "awscli"
+brew "bat"
+brew "colima"
+brew "docker"
+brew "docker-compose"
+brew "imagemagick"
+brew "fd"
+brew "fzf"
+brew "git"
+brew "jq"
+brew "lazygit"
+brew "mise"
+brew "nvim"
+brew "powerlevel10k"
+brew "wget"
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
+brew "zsh-vi-mode"
+
+cask "font-fira-code-nerd-font"
+cask "kitty"
+cask "visual-studio-code"
