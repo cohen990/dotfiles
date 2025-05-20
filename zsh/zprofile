@@ -6,4 +6,6 @@ if command -v brew &>/dev/null; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
+echo "hiiii"
+
 eval "$(mise activate zsh --shims)"

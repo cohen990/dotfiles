@@ -16,6 +16,7 @@ packages+=("nvim")
 packages+=("fira-code-fonts")
 packages+=("readline-devel")
 packages+=("bat")
+packages+=("zsh")
 
 sudo dnf config-manager addrepo --from-repofile=${repos[*]}
 sudo dnf install -y ${packages[*]}

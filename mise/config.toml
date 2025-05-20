@@ -1,5 +1,5 @@
 [tools]
-node = "24.0.0"
+node = "latest"
 "npm:@mermaid-js/mermaid-cli" = "latest"
 "npm:neovim" = "latest"
 "npm:pnpm" = "latest"
