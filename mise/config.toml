@@ -2,6 +2,7 @@
 node = "24.0.0"
 "npm:@mermaid-js/mermaid-cli" = "latest"
 "npm:neovim" = "latest"
+"npm:pnpm" = "latest"
 lua = "5.1"
 
 [settings]
