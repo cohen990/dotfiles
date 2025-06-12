@@ -12,6 +12,7 @@ repos=()
 sudo dnf install -y dnf-plugins-core
 
 repos+=("https://mise.jdx.dev/rpm/mise.repo")
+repos+=("https://download.docker.com/linux/fedora/docker-ce.repo")
 
 packages=()
 
@@ -24,6 +25,11 @@ packages+=("fira-code-fonts")
 packages+=("readline-devel")
 packages+=("bat")
 packages+=("zsh")
+packages+=("docker-ce")
+packages+=("docker-ce-cli")
+packages+=("containerd.io")
+packages+=("docker-buildx-plugin")
+packages+=("docker-compose-plugin")
 
 if [[($personal)]] ; then
     echo "Adding dependencies for a personal computer"
