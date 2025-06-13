@@ -26,3 +26,4 @@ source ~/.local/share/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.zprofile
 
 . "$HOME/.cargo/env"
+bindkey -v
