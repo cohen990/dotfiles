@@ -27,3 +27,9 @@ source ~/.zprofile
 
 . "$HOME/.cargo/env"
 bindkey -v
+bindkey '^R' history-incremental-search-backward
+
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory

@@ -31,6 +31,7 @@ packages+=("containerd.io")
 packages+=("docker-buildx-plugin")
 packages+=("docker-compose-plugin")
 packages+=("iptables-legacy")
+packages+=("perf")
 
 if [[($personal)]] ; then
     echo "Adding dependencies for a personal computer"
