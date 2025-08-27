@@ -1,6 +1,7 @@
 # Brewfile
 
 # Formulae
+brew "azure-cli"
 brew "awscli"
 brew "bat"
 brew "colima"
@@ -14,6 +15,7 @@ brew "ghostscript"
 brew "jq"
 brew "lazygit"
 brew "mise"
+brew "music-decoy"
 brew "nvim"
 brew "ripgrep"
 brew "tectonic"
@@ -26,3 +28,6 @@ brew "zsh-vi-mode"
 cask "font-fira-code-nerd-font"
 cask "kitty"
 cask "visual-studio-code"
+cask "scroll-reverser"
+cask "alt-tab"
+

@@ -8,3 +8,4 @@ fi
 
 # Install Homebrew packages
 ACCEPT_EULA=y brew bundle --file=~/git/dotfiles/packages.brewfile
+ACCEPT_EULA=y brew bundle --file=~/git/dotfiles/accurx.packages.brewfile
