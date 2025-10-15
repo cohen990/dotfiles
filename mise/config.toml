@@ -3,6 +3,7 @@ node = "latest"
 "npm:@mermaid-js/mermaid-cli" = "latest"
 "npm:neovim" = "latest"
 "npm:pnpm" = "latest"
+"npm:npm" = "latest"
 lua = "5.1"
 
 [settings]

@@ -8,7 +8,7 @@ fi
 # Load ZSH autosuggestions from Homebrew (only if Homebrew is installed)
 if type brew &>/dev/null; then
   source <(fzf --zsh)
-  source "$(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh"
+#  source "$(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh"
   zvm_after_init_commands+=(
     'bindkey "^[[A" history-beginning-search-backward'  # Up Arrow
     'bindkey "^[[B" history-beginning-search-forward'   # Down Arrow
@@ -26,10 +26,12 @@ source ~/.local/share/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.zprofile
 
 . "$HOME/.cargo/env"
-bindkey -v
+# bindkey -v
 bindkey '^R' history-incremental-search-backward
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
+
+autoload -Uz compinit && compinit

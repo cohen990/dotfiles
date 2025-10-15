@@ -1,3 +1,11 @@
 # Brewfile
 
+brew "go"
+brew "kubectl"
+brew "lima"
+brew "lima-additional-guestagents"
+brew "qemu"
+brew "sqlcmd"
+
 cask "rider"
+cask "dbeaver-community"
