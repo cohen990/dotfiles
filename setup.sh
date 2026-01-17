@@ -19,4 +19,10 @@ ln -fs $CONFIG_DIR/nvim $HOME/.config
 ln -fs $CONFIG_DIR/mise $HOME/.config
 ln -fs $CONFIG_DIR/kitty $HOME/.config
 
+ln -fs $CONFIG_DIR/tmux.conf $HOME/.tmux.conf
+
+# Claude Code configuration
+mkdir -p $HOME/.claude
+ln -fs $CONFIG_DIR/claude/agents $HOME/.claude/agents
+
 mise install
