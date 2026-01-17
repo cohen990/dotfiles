@@ -1,0 +1,543 @@
+{
+  "content": "#! /bin/bash\n\nrm -rf $HOME/.local/share/powerlevel10k\ngit clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/.local/share/powerlevel10k\n",
+  "language": "Bash",
+  "tree": {
+    "nodes": [
+      {
+        "parent": null,
+        "pointer": {
+          "index": 0
+        },
+        "children": [
+          {
+            "index": 1
+          }
+        ],
+        "depth": 1,
+        "name": "root",
+        "complexity": 9.299844136842408,
+        "local_complexity": 0.21597439530576262,
+        "subgraph_size": 23,
+        "syntax_span": {
+          "start_row": 0,
+          "start_column": 0,
+          "end_row": 0,
+          "end_column": 0
+        }
+      },
+      {
+        "parent": {
+          "index": 0
+        },
+        "pointer": {
+          "index": 1
+        },
+        "children": [
+          {
+            "index": 2
+          },
+          {
+            "index": 3
+          },
+          {
+            "index": 12
+          }
+        ],
+        "depth": 2,
+        "name": "program",
+        "complexity": 9.232344136842407,
+        "local_complexity": 0.2261542572279636,
+        "subgraph_size": 22,
+        "syntax_span": {
+          "start_row": 0,
+          "start_column": 0,
+          "end_row": 4,
+          "end_column": 0
+        }
+      },
+      {
+        "parent": {
+          "index": 1
+        },
+        "pointer": {
+          "index": 2
+        },
+        "children": [],
+        "depth": 3,
+        "name": "comment",
+        "complexity": 0.20249999999999999,
+        "local_complexity": 0.20249999999999999,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 0,
+          "start_column": 0,
+          "end_row": 0,
+          "end_column": 12
+        }
+      },
+      {
+        "parent": {
+          "index": 1
+        },
+        "pointer": {
+          "index": 3
+        },
+        "children": [
+          {
+            "index": 4
+          },
+          {
+            "index": 6
+          },
+          {
+            "index": 7
+          }
+        ],
+        "depth": 3,
+        "name": "command",
+        "complexity": 3.706020227454275,
+        "local_complexity": 0.26534858377290865,
+        "subgraph_size": 9,
+        "syntax_span": {
+          "start_row": 2,
+          "start_column": 0,
+          "end_row": 2,
+          "end_column": 39
+        }
+      },
+      {
+        "parent": {
+          "index": 3
+        },
+        "pointer": {
+          "index": 4
+        },
+        "children": [
+          {
+            "index": 5
+          }
+        ],
+        "depth": 4,
+        "name": "command_name",
+        "complexity": 0.6075,
+        "local_complexity": 0.26442973360119776,
+        "subgraph_size": 2,
+        "syntax_span": {
+          "start_row": 2,
+          "start_column": 0,
+          "end_row": 2,
+          "end_column": 2
+        }
+      },
+      {
+        "parent": {
+          "index": 4
+        },
+        "pointer": {
+          "index": 5
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 2,
+          "start_column": 0,
+          "end_row": 2,
+          "end_column": 2
+        }
+      },
+      {
+        "parent": {
+          "index": 3
+        },
+        "pointer": {
+          "index": 6
+        },
+        "children": [],
+        "depth": 4,
+        "name": "test_operator",
+        "complexity": 0.27,
+        "local_complexity": 0.27,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 2,
+          "start_column": 3,
+          "end_row": 2,
+          "end_column": 6
+        }
+      },
+      {
+        "parent": {
+          "index": 3
+        },
+        "pointer": {
+          "index": 7
+        },
+        "children": [
+          {
+            "index": 8
+          },
+          {
+            "index": 11
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 2,
+          "start_column": 7,
+          "end_row": 2,
+          "end_column": 39
+        }
+      },
+      {
+        "parent": {
+          "index": 7
+        },
+        "pointer": {
+          "index": 8
+        },
+        "children": [
+          {
+            "index": 9
+          },
+          {
+            "index": 10
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 2,
+          "start_column": 7,
+          "end_row": 2,
+          "end_column": 12
+        }
+      },
+      {
+        "parent": {
+          "index": 8
+        },
+        "pointer": {
+          "index": 9
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 2,
+          "start_column": 7,
+          "end_row": 2,
+          "end_column": 8
+        }
+      },
+      {
+        "parent": {
+          "index": 8
+        },
+        "pointer": {
+          "index": 10
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 2,
+          "start_column": 8,
+          "end_row": 2,
+          "end_column": 12
+        }
+      },
+      {
+        "parent": {
+          "index": 7
+        },
+        "pointer": {
+          "index": 11
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 2,
+          "start_column": 12,
+          "end_row": 2,
+          "end_column": 39
+        }
+      },
+      {
+        "parent": {
+          "index": 1
+        },
+        "pointer": {
+          "index": 12
+        },
+        "children": [
+          {
+            "index": 13
+          },
+          {
+            "index": 15
+          },
+          {
+            "index": 16
+          },
+          {
+            "index": 17
+          },
+          {
+            "index": 18
+          }
+        ],
+        "depth": 3,
+        "name": "command",
+        "complexity": 4.920059989003923,
+        "local_complexity": 0.2768848386902461,
+        "subgraph_size": 11,
+        "syntax_span": {
+          "start_row": 3,
+          "start_column": 0,
+          "end_row": 3,
+          "end_column": 97
+        }
+      },
+      {
+        "parent": {
+          "index": 12
+        },
+        "pointer": {
+          "index": 13
+        },
+        "children": [
+          {
+            "index": 14
+          }
+        ],
+        "depth": 4,
+        "name": "command_name",
+        "complexity": 0.6075,
+        "local_complexity": 0.26442973360119776,
+        "subgraph_size": 2,
+        "syntax_span": {
+          "start_row": 3,
+          "start_column": 0,
+          "end_row": 3,
+          "end_column": 3
+        }
+      },
+      {
+        "parent": {
+          "index": 13
+        },
+        "pointer": {
+          "index": 14
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 3,
+          "start_column": 0,
+          "end_row": 3,
+          "end_column": 3
+        }
+      },
+      {
+        "parent": {
+          "index": 12
+        },
+        "pointer": {
+          "index": 15
+        },
+        "children": [],
+        "depth": 4,
+        "name": "word",
+        "complexity": 0.27,
+        "local_complexity": 0.27,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 3,
+          "start_column": 4,
+          "end_row": 3,
+          "end_column": 9
+        }
+      },
+      {
+        "parent": {
+          "index": 12
+        },
+        "pointer": {
+          "index": 16
+        },
+        "children": [],
+        "depth": 4,
+        "name": "word",
+        "complexity": 0.27,
+        "local_complexity": 0.27,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 3,
+          "start_column": 10,
+          "end_row": 3,
+          "end_column": 19
+        }
+      },
+      {
+        "parent": {
+          "index": 12
+        },
+        "pointer": {
+          "index": 17
+        },
+        "children": [],
+        "depth": 4,
+        "name": "word",
+        "complexity": 0.27,
+        "local_complexity": 0.27,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 3,
+          "start_column": 20,
+          "end_row": 3,
+          "end_column": 64
+        }
+      },
+      {
+        "parent": {
+          "index": 12
+        },
+        "pointer": {
+          "index": 18
+        },
+        "children": [
+          {
+            "index": 19
+          },
+          {
+            "index": 22
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 3,
+          "start_column": 65,
+          "end_row": 3,
+          "end_column": 97
+        }
+      },
+      {
+        "parent": {
+          "index": 18
+        },
+        "pointer": {
+          "index": 19
+        },
+        "children": [
+          {
+            "index": 20
+          },
+          {
+            "index": 21
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 3,
+          "start_column": 65,
+          "end_row": 3,
+          "end_column": 70
+        }
+      },
+      {
+        "parent": {
+          "index": 19
+        },
+        "pointer": {
+          "index": 20
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 3,
+          "start_column": 65,
+          "end_row": 3,
+          "end_column": 66
+        }
+      },
+      {
+        "parent": {
+          "index": 19
+        },
+        "pointer": {
+          "index": 21
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 3,
+          "start_column": 66,
+          "end_row": 3,
+          "end_column": 70
+        }
+      },
+      {
+        "parent": {
+          "index": 18
+        },
+        "pointer": {
+          "index": 22
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 3,
+          "start_column": 70,
+          "end_row": 3,
+          "end_column": 97
+        }
+      }
+    ]
+  },
+  "_id": "install-powerlevel10k.sh"
+}

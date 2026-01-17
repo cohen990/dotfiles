@@ -1,0 +1,4151 @@
+{
+  "content": "#!/bin/bash\n\nexport CONFIG_DIR=\"$HOME/git/dotfiles\"\n\nln -fs $CONFIG_DIR/.gitconfig $HOME/.gitconfig\nln -fs $CONFIG_DIR/.vimrc $HOME/.vimrc\nln -fs $CONFIG_DIR/.git-commit-template $HOME/.git-commit-template\n\nmkdir -p $HOME/.config/i3\nmkdir -p $HOME/.config/fish\n\nln -fs $CONFIG_DIR/zsh/zshrc $HOME/.zshrc\nln -fs $CONFIG_DIR/zsh/zprofile $HOME/.zprofile\nln -fs $CONFIG_DIR/zsh/p10k.zsh $HOME/.p10k.zsh\n\nln -fs $CONFIG_DIR/i3.config $HOME/.config/i3/config\n\nln -fs $CONFIG_DIR/nvim $HOME/.config\nln -fs $CONFIG_DIR/mise $HOME/.config\nln -fs $CONFIG_DIR/kitty $HOME/.config\n\nmise install\n",
+  "language": "Bash",
+  "tree": {
+    "nodes": [
+      {
+        "parent": null,
+        "pointer": {
+          "index": 0
+        },
+        "children": [
+          {
+            "index": 1
+          }
+        ],
+        "depth": 1,
+        "name": "root",
+        "complexity": 82.05919770250595,
+        "local_complexity": 0.1646490946045717,
+        "subgraph_size": 177,
+        "syntax_span": {
+          "start_row": 0,
+          "start_column": 0,
+          "end_row": 0,
+          "end_column": 0
+        }
+      },
+      {
+        "parent": {
+          "index": 0
+        },
+        "pointer": {
+          "index": 1
+        },
+        "children": [
+          {
+            "index": 2
+          },
+          {
+            "index": 3
+          },
+          {
+            "index": 15
+          },
+          {
+            "index": 29
+          },
+          {
+            "index": 43
+          },
+          {
+            "index": 57
+          },
+          {
+            "index": 66
+          },
+          {
+            "index": 75
+          },
+          {
+            "index": 89
+          },
+          {
+            "index": 103
+          },
+          {
+            "index": 117
+          },
+          {
+            "index": 131
+          },
+          {
+            "index": 145
+          },
+          {
+            "index": 159
+          },
+          {
+            "index": 173
+          }
+        ],
+        "depth": 2,
+        "name": "program",
+        "complexity": 81.99169770250596,
+        "local_complexity": 0.16563597845322153,
+        "subgraph_size": 176,
+        "syntax_span": {
+          "start_row": 0,
+          "start_column": 0,
+          "end_row": 22,
+          "end_column": 0
+        }
+      },
+      {
+        "parent": {
+          "index": 1
+        },
+        "pointer": {
+          "index": 2
+        },
+        "children": [],
+        "depth": 3,
+        "name": "comment",
+        "complexity": 0.20249999999999999,
+        "local_complexity": 0.20249999999999999,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 0,
+          "start_column": 0,
+          "end_row": 0,
+          "end_column": 11
+        }
+      },
+      {
+        "parent": {
+          "index": 1
+        },
+        "pointer": {
+          "index": 3
+        },
+        "children": [
+          {
+            "index": 4
+          },
+          {
+            "index": 5
+          }
+        ],
+        "depth": 3,
+        "name": "declaration_command",
+        "complexity": 6.517172374026858,
+        "local_complexity": 0.33040127352745263,
+        "subgraph_size": 12,
+        "syntax_span": {
+          "start_row": 2,
+          "start_column": 0,
+          "end_row": 2,
+          "end_column": 38
+        }
+      },
+      {
+        "parent": {
+          "index": 3
+        },
+        "pointer": {
+          "index": 4
+        },
+        "children": [],
+        "depth": 4,
+        "name": "export",
+        "complexity": 0.27,
+        "local_complexity": 0.27,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 2,
+          "start_column": 0,
+          "end_row": 2,
+          "end_column": 6
+        }
+      },
+      {
+        "parent": {
+          "index": 3
+        },
+        "pointer": {
+          "index": 5
+        },
+        "children": [
+          {
+            "index": 6
+          },
+          {
+            "index": 7
+          },
+          {
+            "index": 8
+          }
+        ],
+        "depth": 4,
+        "name": "variable_assignment",
+        "complexity": 5.888714258400871,
+        "local_complexity": 0.3715527510883264,
+        "subgraph_size": 10,
+        "syntax_span": {
+          "start_row": 2,
+          "start_column": 7,
+          "end_row": 2,
+          "end_column": 38
+        }
+      },
+      {
+        "parent": {
+          "index": 5
+        },
+        "pointer": {
+          "index": 6
+        },
+        "children": [],
+        "depth": 5,
+        "name": "variable_name",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 2,
+          "start_column": 7,
+          "end_row": 2,
+          "end_column": 17
+        }
+      },
+      {
+        "parent": {
+          "index": 5
+        },
+        "pointer": {
+          "index": 7
+        },
+        "children": [],
+        "depth": 5,
+        "name": "=",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 2,
+          "start_column": 17,
+          "end_row": 2,
+          "end_column": 18
+        }
+      },
+      {
+        "parent": {
+          "index": 5
+        },
+        "pointer": {
+          "index": 8
+        },
+        "children": [
+          {
+            "index": 9
+          },
+          {
+            "index": 10
+          },
+          {
+            "index": 13
+          },
+          {
+            "index": 14
+          }
+        ],
+        "depth": 5,
+        "name": "string",
+        "complexity": 4.406186417632455,
+        "local_complexity": 0.4265257147235315,
+        "subgraph_size": 7,
+        "syntax_span": {
+          "start_row": 2,
+          "start_column": 18,
+          "end_row": 2,
+          "end_column": 38
+        }
+      },
+      {
+        "parent": {
+          "index": 8
+        },
+        "pointer": {
+          "index": 9
+        },
+        "children": [],
+        "depth": 6,
+        "name": "\"",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 2,
+          "start_column": 18,
+          "end_row": 2,
+          "end_column": 19
+        }
+      },
+      {
+        "parent": {
+          "index": 8
+        },
+        "pointer": {
+          "index": 10
+        },
+        "children": [
+          {
+            "index": 11
+          },
+          {
+            "index": 12
+          }
+        ],
+        "depth": 6,
+        "name": "simple_expansion",
+        "complexity": 1.6619162312519755,
+        "local_complexity": 0.44469641032996254,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 2,
+          "start_column": 19,
+          "end_row": 2,
+          "end_column": 24
+        }
+      },
+      {
+        "parent": {
+          "index": 10
+        },
+        "pointer": {
+          "index": 11
+        },
+        "children": [],
+        "depth": 7,
+        "name": "$",
+        "complexity": 0.47250000000000003,
+        "local_complexity": 0.47250000000000003,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 2,
+          "start_column": 19,
+          "end_row": 2,
+          "end_column": 20
+        }
+      },
+      {
+        "parent": {
+          "index": 10
+        },
+        "pointer": {
+          "index": 12
+        },
+        "children": [],
+        "depth": 7,
+        "name": "variable_name",
+        "complexity": 0.47250000000000003,
+        "local_complexity": 0.47250000000000003,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 2,
+          "start_column": 20,
+          "end_row": 2,
+          "end_column": 24
+        }
+      },
+      {
+        "parent": {
+          "index": 8
+        },
+        "pointer": {
+          "index": 13
+        },
+        "children": [],
+        "depth": 6,
+        "name": "string_content",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 2,
+          "start_column": 24,
+          "end_row": 2,
+          "end_column": 37
+        }
+      },
+      {
+        "parent": {
+          "index": 8
+        },
+        "pointer": {
+          "index": 14
+        },
+        "children": [],
+        "depth": 6,
+        "name": "\"",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 2,
+          "start_column": 37,
+          "end_row": 2,
+          "end_column": 38
+        }
+      },
+      {
+        "parent": {
+          "index": 1
+        },
+        "pointer": {
+          "index": 15
+        },
+        "children": [
+          {
+            "index": 16
+          },
+          {
+            "index": 18
+          },
+          {
+            "index": 19
+          },
+          {
+            "index": 24
+          }
+        ],
+        "depth": 3,
+        "name": "command",
+        "complexity": 6.240810805584212,
+        "local_complexity": 0.26295859706493774,
+        "subgraph_size": 14,
+        "syntax_span": {
+          "start_row": 4,
+          "start_column": 0,
+          "end_row": 4,
+          "end_column": 46
+        }
+      },
+      {
+        "parent": {
+          "index": 15
+        },
+        "pointer": {
+          "index": 16
+        },
+        "children": [
+          {
+            "index": 17
+          }
+        ],
+        "depth": 4,
+        "name": "command_name",
+        "complexity": 0.6075,
+        "local_complexity": 0.26442973360119776,
+        "subgraph_size": 2,
+        "syntax_span": {
+          "start_row": 4,
+          "start_column": 0,
+          "end_row": 4,
+          "end_column": 2
+        }
+      },
+      {
+        "parent": {
+          "index": 16
+        },
+        "pointer": {
+          "index": 17
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 4,
+          "start_column": 0,
+          "end_row": 4,
+          "end_column": 2
+        }
+      },
+      {
+        "parent": {
+          "index": 15
+        },
+        "pointer": {
+          "index": 18
+        },
+        "children": [],
+        "depth": 4,
+        "name": "test_operator",
+        "complexity": 0.27,
+        "local_complexity": 0.27,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 4,
+          "start_column": 3,
+          "end_row": 4,
+          "end_column": 6
+        }
+      },
+      {
+        "parent": {
+          "index": 15
+        },
+        "pointer": {
+          "index": 19
+        },
+        "children": [
+          {
+            "index": 20
+          },
+          {
+            "index": 23
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 4,
+          "start_column": 7,
+          "end_row": 4,
+          "end_column": 29
+        }
+      },
+      {
+        "parent": {
+          "index": 19
+        },
+        "pointer": {
+          "index": 20
+        },
+        "children": [
+          {
+            "index": 21
+          },
+          {
+            "index": 22
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 4,
+          "start_column": 7,
+          "end_row": 4,
+          "end_column": 18
+        }
+      },
+      {
+        "parent": {
+          "index": 20
+        },
+        "pointer": {
+          "index": 21
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 4,
+          "start_column": 7,
+          "end_row": 4,
+          "end_column": 8
+        }
+      },
+      {
+        "parent": {
+          "index": 20
+        },
+        "pointer": {
+          "index": 22
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 4,
+          "start_column": 8,
+          "end_row": 4,
+          "end_column": 18
+        }
+      },
+      {
+        "parent": {
+          "index": 19
+        },
+        "pointer": {
+          "index": 23
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 4,
+          "start_column": 18,
+          "end_row": 4,
+          "end_column": 29
+        }
+      },
+      {
+        "parent": {
+          "index": 15
+        },
+        "pointer": {
+          "index": 24
+        },
+        "children": [
+          {
+            "index": 25
+          },
+          {
+            "index": 28
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 4,
+          "start_column": 30,
+          "end_row": 4,
+          "end_column": 46
+        }
+      },
+      {
+        "parent": {
+          "index": 24
+        },
+        "pointer": {
+          "index": 25
+        },
+        "children": [
+          {
+            "index": 26
+          },
+          {
+            "index": 27
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 4,
+          "start_column": 30,
+          "end_row": 4,
+          "end_column": 35
+        }
+      },
+      {
+        "parent": {
+          "index": 25
+        },
+        "pointer": {
+          "index": 26
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 4,
+          "start_column": 30,
+          "end_row": 4,
+          "end_column": 31
+        }
+      },
+      {
+        "parent": {
+          "index": 25
+        },
+        "pointer": {
+          "index": 27
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 4,
+          "start_column": 31,
+          "end_row": 4,
+          "end_column": 35
+        }
+      },
+      {
+        "parent": {
+          "index": 24
+        },
+        "pointer": {
+          "index": 28
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 4,
+          "start_column": 35,
+          "end_row": 4,
+          "end_column": 46
+        }
+      },
+      {
+        "parent": {
+          "index": 1
+        },
+        "pointer": {
+          "index": 29
+        },
+        "children": [
+          {
+            "index": 30
+          },
+          {
+            "index": 32
+          },
+          {
+            "index": 33
+          },
+          {
+            "index": 38
+          }
+        ],
+        "depth": 3,
+        "name": "command",
+        "complexity": 6.240810805584212,
+        "local_complexity": 0.26295859706493774,
+        "subgraph_size": 14,
+        "syntax_span": {
+          "start_row": 5,
+          "start_column": 0,
+          "end_row": 5,
+          "end_column": 38
+        }
+      },
+      {
+        "parent": {
+          "index": 29
+        },
+        "pointer": {
+          "index": 30
+        },
+        "children": [
+          {
+            "index": 31
+          }
+        ],
+        "depth": 4,
+        "name": "command_name",
+        "complexity": 0.6075,
+        "local_complexity": 0.26442973360119776,
+        "subgraph_size": 2,
+        "syntax_span": {
+          "start_row": 5,
+          "start_column": 0,
+          "end_row": 5,
+          "end_column": 2
+        }
+      },
+      {
+        "parent": {
+          "index": 30
+        },
+        "pointer": {
+          "index": 31
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 5,
+          "start_column": 0,
+          "end_row": 5,
+          "end_column": 2
+        }
+      },
+      {
+        "parent": {
+          "index": 29
+        },
+        "pointer": {
+          "index": 32
+        },
+        "children": [],
+        "depth": 4,
+        "name": "test_operator",
+        "complexity": 0.27,
+        "local_complexity": 0.27,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 5,
+          "start_column": 3,
+          "end_row": 5,
+          "end_column": 6
+        }
+      },
+      {
+        "parent": {
+          "index": 29
+        },
+        "pointer": {
+          "index": 33
+        },
+        "children": [
+          {
+            "index": 34
+          },
+          {
+            "index": 37
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 5,
+          "start_column": 7,
+          "end_row": 5,
+          "end_column": 25
+        }
+      },
+      {
+        "parent": {
+          "index": 33
+        },
+        "pointer": {
+          "index": 34
+        },
+        "children": [
+          {
+            "index": 35
+          },
+          {
+            "index": 36
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 5,
+          "start_column": 7,
+          "end_row": 5,
+          "end_column": 18
+        }
+      },
+      {
+        "parent": {
+          "index": 34
+        },
+        "pointer": {
+          "index": 35
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 5,
+          "start_column": 7,
+          "end_row": 5,
+          "end_column": 8
+        }
+      },
+      {
+        "parent": {
+          "index": 34
+        },
+        "pointer": {
+          "index": 36
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 5,
+          "start_column": 8,
+          "end_row": 5,
+          "end_column": 18
+        }
+      },
+      {
+        "parent": {
+          "index": 33
+        },
+        "pointer": {
+          "index": 37
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 5,
+          "start_column": 18,
+          "end_row": 5,
+          "end_column": 25
+        }
+      },
+      {
+        "parent": {
+          "index": 29
+        },
+        "pointer": {
+          "index": 38
+        },
+        "children": [
+          {
+            "index": 39
+          },
+          {
+            "index": 42
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 5,
+          "start_column": 26,
+          "end_row": 5,
+          "end_column": 38
+        }
+      },
+      {
+        "parent": {
+          "index": 38
+        },
+        "pointer": {
+          "index": 39
+        },
+        "children": [
+          {
+            "index": 40
+          },
+          {
+            "index": 41
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 5,
+          "start_column": 26,
+          "end_row": 5,
+          "end_column": 31
+        }
+      },
+      {
+        "parent": {
+          "index": 39
+        },
+        "pointer": {
+          "index": 40
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 5,
+          "start_column": 26,
+          "end_row": 5,
+          "end_column": 27
+        }
+      },
+      {
+        "parent": {
+          "index": 39
+        },
+        "pointer": {
+          "index": 41
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 5,
+          "start_column": 27,
+          "end_row": 5,
+          "end_column": 31
+        }
+      },
+      {
+        "parent": {
+          "index": 38
+        },
+        "pointer": {
+          "index": 42
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 5,
+          "start_column": 31,
+          "end_row": 5,
+          "end_column": 38
+        }
+      },
+      {
+        "parent": {
+          "index": 1
+        },
+        "pointer": {
+          "index": 43
+        },
+        "children": [
+          {
+            "index": 44
+          },
+          {
+            "index": 46
+          },
+          {
+            "index": 47
+          },
+          {
+            "index": 52
+          }
+        ],
+        "depth": 3,
+        "name": "command",
+        "complexity": 6.240810805584212,
+        "local_complexity": 0.26295859706493774,
+        "subgraph_size": 14,
+        "syntax_span": {
+          "start_row": 6,
+          "start_column": 0,
+          "end_row": 6,
+          "end_column": 66
+        }
+      },
+      {
+        "parent": {
+          "index": 43
+        },
+        "pointer": {
+          "index": 44
+        },
+        "children": [
+          {
+            "index": 45
+          }
+        ],
+        "depth": 4,
+        "name": "command_name",
+        "complexity": 0.6075,
+        "local_complexity": 0.26442973360119776,
+        "subgraph_size": 2,
+        "syntax_span": {
+          "start_row": 6,
+          "start_column": 0,
+          "end_row": 6,
+          "end_column": 2
+        }
+      },
+      {
+        "parent": {
+          "index": 44
+        },
+        "pointer": {
+          "index": 45
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 6,
+          "start_column": 0,
+          "end_row": 6,
+          "end_column": 2
+        }
+      },
+      {
+        "parent": {
+          "index": 43
+        },
+        "pointer": {
+          "index": 46
+        },
+        "children": [],
+        "depth": 4,
+        "name": "test_operator",
+        "complexity": 0.27,
+        "local_complexity": 0.27,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 6,
+          "start_column": 3,
+          "end_row": 6,
+          "end_column": 6
+        }
+      },
+      {
+        "parent": {
+          "index": 43
+        },
+        "pointer": {
+          "index": 47
+        },
+        "children": [
+          {
+            "index": 48
+          },
+          {
+            "index": 51
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 6,
+          "start_column": 7,
+          "end_row": 6,
+          "end_column": 39
+        }
+      },
+      {
+        "parent": {
+          "index": 47
+        },
+        "pointer": {
+          "index": 48
+        },
+        "children": [
+          {
+            "index": 49
+          },
+          {
+            "index": 50
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 6,
+          "start_column": 7,
+          "end_row": 6,
+          "end_column": 18
+        }
+      },
+      {
+        "parent": {
+          "index": 48
+        },
+        "pointer": {
+          "index": 49
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 6,
+          "start_column": 7,
+          "end_row": 6,
+          "end_column": 8
+        }
+      },
+      {
+        "parent": {
+          "index": 48
+        },
+        "pointer": {
+          "index": 50
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 6,
+          "start_column": 8,
+          "end_row": 6,
+          "end_column": 18
+        }
+      },
+      {
+        "parent": {
+          "index": 47
+        },
+        "pointer": {
+          "index": 51
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 6,
+          "start_column": 18,
+          "end_row": 6,
+          "end_column": 39
+        }
+      },
+      {
+        "parent": {
+          "index": 43
+        },
+        "pointer": {
+          "index": 52
+        },
+        "children": [
+          {
+            "index": 53
+          },
+          {
+            "index": 56
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 6,
+          "start_column": 40,
+          "end_row": 6,
+          "end_column": 66
+        }
+      },
+      {
+        "parent": {
+          "index": 52
+        },
+        "pointer": {
+          "index": 53
+        },
+        "children": [
+          {
+            "index": 54
+          },
+          {
+            "index": 55
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 6,
+          "start_column": 40,
+          "end_row": 6,
+          "end_column": 45
+        }
+      },
+      {
+        "parent": {
+          "index": 53
+        },
+        "pointer": {
+          "index": 54
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 6,
+          "start_column": 40,
+          "end_row": 6,
+          "end_column": 41
+        }
+      },
+      {
+        "parent": {
+          "index": 53
+        },
+        "pointer": {
+          "index": 55
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 6,
+          "start_column": 41,
+          "end_row": 6,
+          "end_column": 45
+        }
+      },
+      {
+        "parent": {
+          "index": 52
+        },
+        "pointer": {
+          "index": 56
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 6,
+          "start_column": 45,
+          "end_row": 6,
+          "end_column": 66
+        }
+      },
+      {
+        "parent": {
+          "index": 1
+        },
+        "pointer": {
+          "index": 57
+        },
+        "children": [
+          {
+            "index": 58
+          },
+          {
+            "index": 60
+          },
+          {
+            "index": 61
+          }
+        ],
+        "depth": 3,
+        "name": "command",
+        "complexity": 3.706020227454275,
+        "local_complexity": 0.26534858377290865,
+        "subgraph_size": 9,
+        "syntax_span": {
+          "start_row": 8,
+          "start_column": 0,
+          "end_row": 8,
+          "end_column": 25
+        }
+      },
+      {
+        "parent": {
+          "index": 57
+        },
+        "pointer": {
+          "index": 58
+        },
+        "children": [
+          {
+            "index": 59
+          }
+        ],
+        "depth": 4,
+        "name": "command_name",
+        "complexity": 0.6075,
+        "local_complexity": 0.26442973360119776,
+        "subgraph_size": 2,
+        "syntax_span": {
+          "start_row": 8,
+          "start_column": 0,
+          "end_row": 8,
+          "end_column": 5
+        }
+      },
+      {
+        "parent": {
+          "index": 58
+        },
+        "pointer": {
+          "index": 59
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 8,
+          "start_column": 0,
+          "end_row": 8,
+          "end_column": 5
+        }
+      },
+      {
+        "parent": {
+          "index": 57
+        },
+        "pointer": {
+          "index": 60
+        },
+        "children": [],
+        "depth": 4,
+        "name": "test_operator",
+        "complexity": 0.27,
+        "local_complexity": 0.27,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 8,
+          "start_column": 6,
+          "end_row": 8,
+          "end_column": 8
+        }
+      },
+      {
+        "parent": {
+          "index": 57
+        },
+        "pointer": {
+          "index": 61
+        },
+        "children": [
+          {
+            "index": 62
+          },
+          {
+            "index": 65
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 8,
+          "start_column": 9,
+          "end_row": 8,
+          "end_column": 25
+        }
+      },
+      {
+        "parent": {
+          "index": 61
+        },
+        "pointer": {
+          "index": 62
+        },
+        "children": [
+          {
+            "index": 63
+          },
+          {
+            "index": 64
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 8,
+          "start_column": 9,
+          "end_row": 8,
+          "end_column": 14
+        }
+      },
+      {
+        "parent": {
+          "index": 62
+        },
+        "pointer": {
+          "index": 63
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 8,
+          "start_column": 9,
+          "end_row": 8,
+          "end_column": 10
+        }
+      },
+      {
+        "parent": {
+          "index": 62
+        },
+        "pointer": {
+          "index": 64
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 8,
+          "start_column": 10,
+          "end_row": 8,
+          "end_column": 14
+        }
+      },
+      {
+        "parent": {
+          "index": 61
+        },
+        "pointer": {
+          "index": 65
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 8,
+          "start_column": 14,
+          "end_row": 8,
+          "end_column": 25
+        }
+      },
+      {
+        "parent": {
+          "index": 1
+        },
+        "pointer": {
+          "index": 66
+        },
+        "children": [
+          {
+            "index": 67
+          },
+          {
+            "index": 69
+          },
+          {
+            "index": 70
+          }
+        ],
+        "depth": 3,
+        "name": "command",
+        "complexity": 3.706020227454275,
+        "local_complexity": 0.26534858377290865,
+        "subgraph_size": 9,
+        "syntax_span": {
+          "start_row": 9,
+          "start_column": 0,
+          "end_row": 9,
+          "end_column": 27
+        }
+      },
+      {
+        "parent": {
+          "index": 66
+        },
+        "pointer": {
+          "index": 67
+        },
+        "children": [
+          {
+            "index": 68
+          }
+        ],
+        "depth": 4,
+        "name": "command_name",
+        "complexity": 0.6075,
+        "local_complexity": 0.26442973360119776,
+        "subgraph_size": 2,
+        "syntax_span": {
+          "start_row": 9,
+          "start_column": 0,
+          "end_row": 9,
+          "end_column": 5
+        }
+      },
+      {
+        "parent": {
+          "index": 67
+        },
+        "pointer": {
+          "index": 68
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 9,
+          "start_column": 0,
+          "end_row": 9,
+          "end_column": 5
+        }
+      },
+      {
+        "parent": {
+          "index": 66
+        },
+        "pointer": {
+          "index": 69
+        },
+        "children": [],
+        "depth": 4,
+        "name": "test_operator",
+        "complexity": 0.27,
+        "local_complexity": 0.27,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 9,
+          "start_column": 6,
+          "end_row": 9,
+          "end_column": 8
+        }
+      },
+      {
+        "parent": {
+          "index": 66
+        },
+        "pointer": {
+          "index": 70
+        },
+        "children": [
+          {
+            "index": 71
+          },
+          {
+            "index": 74
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 9,
+          "start_column": 9,
+          "end_row": 9,
+          "end_column": 27
+        }
+      },
+      {
+        "parent": {
+          "index": 70
+        },
+        "pointer": {
+          "index": 71
+        },
+        "children": [
+          {
+            "index": 72
+          },
+          {
+            "index": 73
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 9,
+          "start_column": 9,
+          "end_row": 9,
+          "end_column": 14
+        }
+      },
+      {
+        "parent": {
+          "index": 71
+        },
+        "pointer": {
+          "index": 72
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 9,
+          "start_column": 9,
+          "end_row": 9,
+          "end_column": 10
+        }
+      },
+      {
+        "parent": {
+          "index": 71
+        },
+        "pointer": {
+          "index": 73
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 9,
+          "start_column": 10,
+          "end_row": 9,
+          "end_column": 14
+        }
+      },
+      {
+        "parent": {
+          "index": 70
+        },
+        "pointer": {
+          "index": 74
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 9,
+          "start_column": 14,
+          "end_row": 9,
+          "end_column": 27
+        }
+      },
+      {
+        "parent": {
+          "index": 1
+        },
+        "pointer": {
+          "index": 75
+        },
+        "children": [
+          {
+            "index": 76
+          },
+          {
+            "index": 78
+          },
+          {
+            "index": 79
+          },
+          {
+            "index": 84
+          }
+        ],
+        "depth": 3,
+        "name": "command",
+        "complexity": 6.240810805584212,
+        "local_complexity": 0.26295859706493774,
+        "subgraph_size": 14,
+        "syntax_span": {
+          "start_row": 11,
+          "start_column": 0,
+          "end_row": 11,
+          "end_column": 41
+        }
+      },
+      {
+        "parent": {
+          "index": 75
+        },
+        "pointer": {
+          "index": 76
+        },
+        "children": [
+          {
+            "index": 77
+          }
+        ],
+        "depth": 4,
+        "name": "command_name",
+        "complexity": 0.6075,
+        "local_complexity": 0.26442973360119776,
+        "subgraph_size": 2,
+        "syntax_span": {
+          "start_row": 11,
+          "start_column": 0,
+          "end_row": 11,
+          "end_column": 2
+        }
+      },
+      {
+        "parent": {
+          "index": 76
+        },
+        "pointer": {
+          "index": 77
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 11,
+          "start_column": 0,
+          "end_row": 11,
+          "end_column": 2
+        }
+      },
+      {
+        "parent": {
+          "index": 75
+        },
+        "pointer": {
+          "index": 78
+        },
+        "children": [],
+        "depth": 4,
+        "name": "test_operator",
+        "complexity": 0.27,
+        "local_complexity": 0.27,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 11,
+          "start_column": 3,
+          "end_row": 11,
+          "end_column": 6
+        }
+      },
+      {
+        "parent": {
+          "index": 75
+        },
+        "pointer": {
+          "index": 79
+        },
+        "children": [
+          {
+            "index": 80
+          },
+          {
+            "index": 83
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 11,
+          "start_column": 7,
+          "end_row": 11,
+          "end_column": 28
+        }
+      },
+      {
+        "parent": {
+          "index": 79
+        },
+        "pointer": {
+          "index": 80
+        },
+        "children": [
+          {
+            "index": 81
+          },
+          {
+            "index": 82
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 11,
+          "start_column": 7,
+          "end_row": 11,
+          "end_column": 18
+        }
+      },
+      {
+        "parent": {
+          "index": 80
+        },
+        "pointer": {
+          "index": 81
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 11,
+          "start_column": 7,
+          "end_row": 11,
+          "end_column": 8
+        }
+      },
+      {
+        "parent": {
+          "index": 80
+        },
+        "pointer": {
+          "index": 82
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 11,
+          "start_column": 8,
+          "end_row": 11,
+          "end_column": 18
+        }
+      },
+      {
+        "parent": {
+          "index": 79
+        },
+        "pointer": {
+          "index": 83
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 11,
+          "start_column": 18,
+          "end_row": 11,
+          "end_column": 28
+        }
+      },
+      {
+        "parent": {
+          "index": 75
+        },
+        "pointer": {
+          "index": 84
+        },
+        "children": [
+          {
+            "index": 85
+          },
+          {
+            "index": 88
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 11,
+          "start_column": 29,
+          "end_row": 11,
+          "end_column": 41
+        }
+      },
+      {
+        "parent": {
+          "index": 84
+        },
+        "pointer": {
+          "index": 85
+        },
+        "children": [
+          {
+            "index": 86
+          },
+          {
+            "index": 87
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 11,
+          "start_column": 29,
+          "end_row": 11,
+          "end_column": 34
+        }
+      },
+      {
+        "parent": {
+          "index": 85
+        },
+        "pointer": {
+          "index": 86
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 11,
+          "start_column": 29,
+          "end_row": 11,
+          "end_column": 30
+        }
+      },
+      {
+        "parent": {
+          "index": 85
+        },
+        "pointer": {
+          "index": 87
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 11,
+          "start_column": 30,
+          "end_row": 11,
+          "end_column": 34
+        }
+      },
+      {
+        "parent": {
+          "index": 84
+        },
+        "pointer": {
+          "index": 88
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 11,
+          "start_column": 34,
+          "end_row": 11,
+          "end_column": 41
+        }
+      },
+      {
+        "parent": {
+          "index": 1
+        },
+        "pointer": {
+          "index": 89
+        },
+        "children": [
+          {
+            "index": 90
+          },
+          {
+            "index": 92
+          },
+          {
+            "index": 93
+          },
+          {
+            "index": 98
+          }
+        ],
+        "depth": 3,
+        "name": "command",
+        "complexity": 6.240810805584212,
+        "local_complexity": 0.26295859706493774,
+        "subgraph_size": 14,
+        "syntax_span": {
+          "start_row": 12,
+          "start_column": 0,
+          "end_row": 12,
+          "end_column": 47
+        }
+      },
+      {
+        "parent": {
+          "index": 89
+        },
+        "pointer": {
+          "index": 90
+        },
+        "children": [
+          {
+            "index": 91
+          }
+        ],
+        "depth": 4,
+        "name": "command_name",
+        "complexity": 0.6075,
+        "local_complexity": 0.26442973360119776,
+        "subgraph_size": 2,
+        "syntax_span": {
+          "start_row": 12,
+          "start_column": 0,
+          "end_row": 12,
+          "end_column": 2
+        }
+      },
+      {
+        "parent": {
+          "index": 90
+        },
+        "pointer": {
+          "index": 91
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 12,
+          "start_column": 0,
+          "end_row": 12,
+          "end_column": 2
+        }
+      },
+      {
+        "parent": {
+          "index": 89
+        },
+        "pointer": {
+          "index": 92
+        },
+        "children": [],
+        "depth": 4,
+        "name": "test_operator",
+        "complexity": 0.27,
+        "local_complexity": 0.27,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 12,
+          "start_column": 3,
+          "end_row": 12,
+          "end_column": 6
+        }
+      },
+      {
+        "parent": {
+          "index": 89
+        },
+        "pointer": {
+          "index": 93
+        },
+        "children": [
+          {
+            "index": 94
+          },
+          {
+            "index": 97
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 12,
+          "start_column": 7,
+          "end_row": 12,
+          "end_column": 31
+        }
+      },
+      {
+        "parent": {
+          "index": 93
+        },
+        "pointer": {
+          "index": 94
+        },
+        "children": [
+          {
+            "index": 95
+          },
+          {
+            "index": 96
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 12,
+          "start_column": 7,
+          "end_row": 12,
+          "end_column": 18
+        }
+      },
+      {
+        "parent": {
+          "index": 94
+        },
+        "pointer": {
+          "index": 95
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 12,
+          "start_column": 7,
+          "end_row": 12,
+          "end_column": 8
+        }
+      },
+      {
+        "parent": {
+          "index": 94
+        },
+        "pointer": {
+          "index": 96
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 12,
+          "start_column": 8,
+          "end_row": 12,
+          "end_column": 18
+        }
+      },
+      {
+        "parent": {
+          "index": 93
+        },
+        "pointer": {
+          "index": 97
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 12,
+          "start_column": 18,
+          "end_row": 12,
+          "end_column": 31
+        }
+      },
+      {
+        "parent": {
+          "index": 89
+        },
+        "pointer": {
+          "index": 98
+        },
+        "children": [
+          {
+            "index": 99
+          },
+          {
+            "index": 102
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 12,
+          "start_column": 32,
+          "end_row": 12,
+          "end_column": 47
+        }
+      },
+      {
+        "parent": {
+          "index": 98
+        },
+        "pointer": {
+          "index": 99
+        },
+        "children": [
+          {
+            "index": 100
+          },
+          {
+            "index": 101
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 12,
+          "start_column": 32,
+          "end_row": 12,
+          "end_column": 37
+        }
+      },
+      {
+        "parent": {
+          "index": 99
+        },
+        "pointer": {
+          "index": 100
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 12,
+          "start_column": 32,
+          "end_row": 12,
+          "end_column": 33
+        }
+      },
+      {
+        "parent": {
+          "index": 99
+        },
+        "pointer": {
+          "index": 101
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 12,
+          "start_column": 33,
+          "end_row": 12,
+          "end_column": 37
+        }
+      },
+      {
+        "parent": {
+          "index": 98
+        },
+        "pointer": {
+          "index": 102
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 12,
+          "start_column": 37,
+          "end_row": 12,
+          "end_column": 47
+        }
+      },
+      {
+        "parent": {
+          "index": 1
+        },
+        "pointer": {
+          "index": 103
+        },
+        "children": [
+          {
+            "index": 104
+          },
+          {
+            "index": 106
+          },
+          {
+            "index": 107
+          },
+          {
+            "index": 112
+          }
+        ],
+        "depth": 3,
+        "name": "command",
+        "complexity": 6.240810805584212,
+        "local_complexity": 0.26295859706493774,
+        "subgraph_size": 14,
+        "syntax_span": {
+          "start_row": 13,
+          "start_column": 0,
+          "end_row": 13,
+          "end_column": 47
+        }
+      },
+      {
+        "parent": {
+          "index": 103
+        },
+        "pointer": {
+          "index": 104
+        },
+        "children": [
+          {
+            "index": 105
+          }
+        ],
+        "depth": 4,
+        "name": "command_name",
+        "complexity": 0.6075,
+        "local_complexity": 0.26442973360119776,
+        "subgraph_size": 2,
+        "syntax_span": {
+          "start_row": 13,
+          "start_column": 0,
+          "end_row": 13,
+          "end_column": 2
+        }
+      },
+      {
+        "parent": {
+          "index": 104
+        },
+        "pointer": {
+          "index": 105
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 13,
+          "start_column": 0,
+          "end_row": 13,
+          "end_column": 2
+        }
+      },
+      {
+        "parent": {
+          "index": 103
+        },
+        "pointer": {
+          "index": 106
+        },
+        "children": [],
+        "depth": 4,
+        "name": "test_operator",
+        "complexity": 0.27,
+        "local_complexity": 0.27,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 13,
+          "start_column": 3,
+          "end_row": 13,
+          "end_column": 6
+        }
+      },
+      {
+        "parent": {
+          "index": 103
+        },
+        "pointer": {
+          "index": 107
+        },
+        "children": [
+          {
+            "index": 108
+          },
+          {
+            "index": 111
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 13,
+          "start_column": 7,
+          "end_row": 13,
+          "end_column": 31
+        }
+      },
+      {
+        "parent": {
+          "index": 107
+        },
+        "pointer": {
+          "index": 108
+        },
+        "children": [
+          {
+            "index": 109
+          },
+          {
+            "index": 110
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 13,
+          "start_column": 7,
+          "end_row": 13,
+          "end_column": 18
+        }
+      },
+      {
+        "parent": {
+          "index": 108
+        },
+        "pointer": {
+          "index": 109
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 13,
+          "start_column": 7,
+          "end_row": 13,
+          "end_column": 8
+        }
+      },
+      {
+        "parent": {
+          "index": 108
+        },
+        "pointer": {
+          "index": 110
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 13,
+          "start_column": 8,
+          "end_row": 13,
+          "end_column": 18
+        }
+      },
+      {
+        "parent": {
+          "index": 107
+        },
+        "pointer": {
+          "index": 111
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 13,
+          "start_column": 18,
+          "end_row": 13,
+          "end_column": 31
+        }
+      },
+      {
+        "parent": {
+          "index": 103
+        },
+        "pointer": {
+          "index": 112
+        },
+        "children": [
+          {
+            "index": 113
+          },
+          {
+            "index": 116
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 13,
+          "start_column": 32,
+          "end_row": 13,
+          "end_column": 47
+        }
+      },
+      {
+        "parent": {
+          "index": 112
+        },
+        "pointer": {
+          "index": 113
+        },
+        "children": [
+          {
+            "index": 114
+          },
+          {
+            "index": 115
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 13,
+          "start_column": 32,
+          "end_row": 13,
+          "end_column": 37
+        }
+      },
+      {
+        "parent": {
+          "index": 113
+        },
+        "pointer": {
+          "index": 114
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 13,
+          "start_column": 32,
+          "end_row": 13,
+          "end_column": 33
+        }
+      },
+      {
+        "parent": {
+          "index": 113
+        },
+        "pointer": {
+          "index": 115
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 13,
+          "start_column": 33,
+          "end_row": 13,
+          "end_column": 37
+        }
+      },
+      {
+        "parent": {
+          "index": 112
+        },
+        "pointer": {
+          "index": 116
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 13,
+          "start_column": 37,
+          "end_row": 13,
+          "end_column": 47
+        }
+      },
+      {
+        "parent": {
+          "index": 1
+        },
+        "pointer": {
+          "index": 117
+        },
+        "children": [
+          {
+            "index": 118
+          },
+          {
+            "index": 120
+          },
+          {
+            "index": 121
+          },
+          {
+            "index": 126
+          }
+        ],
+        "depth": 3,
+        "name": "command",
+        "complexity": 6.240810805584212,
+        "local_complexity": 0.26295859706493774,
+        "subgraph_size": 14,
+        "syntax_span": {
+          "start_row": 15,
+          "start_column": 0,
+          "end_row": 15,
+          "end_column": 52
+        }
+      },
+      {
+        "parent": {
+          "index": 117
+        },
+        "pointer": {
+          "index": 118
+        },
+        "children": [
+          {
+            "index": 119
+          }
+        ],
+        "depth": 4,
+        "name": "command_name",
+        "complexity": 0.6075,
+        "local_complexity": 0.26442973360119776,
+        "subgraph_size": 2,
+        "syntax_span": {
+          "start_row": 15,
+          "start_column": 0,
+          "end_row": 15,
+          "end_column": 2
+        }
+      },
+      {
+        "parent": {
+          "index": 118
+        },
+        "pointer": {
+          "index": 119
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 15,
+          "start_column": 0,
+          "end_row": 15,
+          "end_column": 2
+        }
+      },
+      {
+        "parent": {
+          "index": 117
+        },
+        "pointer": {
+          "index": 120
+        },
+        "children": [],
+        "depth": 4,
+        "name": "test_operator",
+        "complexity": 0.27,
+        "local_complexity": 0.27,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 15,
+          "start_column": 3,
+          "end_row": 15,
+          "end_column": 6
+        }
+      },
+      {
+        "parent": {
+          "index": 117
+        },
+        "pointer": {
+          "index": 121
+        },
+        "children": [
+          {
+            "index": 122
+          },
+          {
+            "index": 125
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 15,
+          "start_column": 7,
+          "end_row": 15,
+          "end_column": 28
+        }
+      },
+      {
+        "parent": {
+          "index": 121
+        },
+        "pointer": {
+          "index": 122
+        },
+        "children": [
+          {
+            "index": 123
+          },
+          {
+            "index": 124
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 15,
+          "start_column": 7,
+          "end_row": 15,
+          "end_column": 18
+        }
+      },
+      {
+        "parent": {
+          "index": 122
+        },
+        "pointer": {
+          "index": 123
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 15,
+          "start_column": 7,
+          "end_row": 15,
+          "end_column": 8
+        }
+      },
+      {
+        "parent": {
+          "index": 122
+        },
+        "pointer": {
+          "index": 124
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 15,
+          "start_column": 8,
+          "end_row": 15,
+          "end_column": 18
+        }
+      },
+      {
+        "parent": {
+          "index": 121
+        },
+        "pointer": {
+          "index": 125
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 15,
+          "start_column": 18,
+          "end_row": 15,
+          "end_column": 28
+        }
+      },
+      {
+        "parent": {
+          "index": 117
+        },
+        "pointer": {
+          "index": 126
+        },
+        "children": [
+          {
+            "index": 127
+          },
+          {
+            "index": 130
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 15,
+          "start_column": 29,
+          "end_row": 15,
+          "end_column": 52
+        }
+      },
+      {
+        "parent": {
+          "index": 126
+        },
+        "pointer": {
+          "index": 127
+        },
+        "children": [
+          {
+            "index": 128
+          },
+          {
+            "index": 129
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 15,
+          "start_column": 29,
+          "end_row": 15,
+          "end_column": 34
+        }
+      },
+      {
+        "parent": {
+          "index": 127
+        },
+        "pointer": {
+          "index": 128
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 15,
+          "start_column": 29,
+          "end_row": 15,
+          "end_column": 30
+        }
+      },
+      {
+        "parent": {
+          "index": 127
+        },
+        "pointer": {
+          "index": 129
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 15,
+          "start_column": 30,
+          "end_row": 15,
+          "end_column": 34
+        }
+      },
+      {
+        "parent": {
+          "index": 126
+        },
+        "pointer": {
+          "index": 130
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 15,
+          "start_column": 34,
+          "end_row": 15,
+          "end_column": 52
+        }
+      },
+      {
+        "parent": {
+          "index": 1
+        },
+        "pointer": {
+          "index": 131
+        },
+        "children": [
+          {
+            "index": 132
+          },
+          {
+            "index": 134
+          },
+          {
+            "index": 135
+          },
+          {
+            "index": 140
+          }
+        ],
+        "depth": 3,
+        "name": "command",
+        "complexity": 6.240810805584212,
+        "local_complexity": 0.26295859706493774,
+        "subgraph_size": 14,
+        "syntax_span": {
+          "start_row": 17,
+          "start_column": 0,
+          "end_row": 17,
+          "end_column": 37
+        }
+      },
+      {
+        "parent": {
+          "index": 131
+        },
+        "pointer": {
+          "index": 132
+        },
+        "children": [
+          {
+            "index": 133
+          }
+        ],
+        "depth": 4,
+        "name": "command_name",
+        "complexity": 0.6075,
+        "local_complexity": 0.26442973360119776,
+        "subgraph_size": 2,
+        "syntax_span": {
+          "start_row": 17,
+          "start_column": 0,
+          "end_row": 17,
+          "end_column": 2
+        }
+      },
+      {
+        "parent": {
+          "index": 132
+        },
+        "pointer": {
+          "index": 133
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 17,
+          "start_column": 0,
+          "end_row": 17,
+          "end_column": 2
+        }
+      },
+      {
+        "parent": {
+          "index": 131
+        },
+        "pointer": {
+          "index": 134
+        },
+        "children": [],
+        "depth": 4,
+        "name": "test_operator",
+        "complexity": 0.27,
+        "local_complexity": 0.27,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 17,
+          "start_column": 3,
+          "end_row": 17,
+          "end_column": 6
+        }
+      },
+      {
+        "parent": {
+          "index": 131
+        },
+        "pointer": {
+          "index": 135
+        },
+        "children": [
+          {
+            "index": 136
+          },
+          {
+            "index": 139
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 17,
+          "start_column": 7,
+          "end_row": 17,
+          "end_column": 23
+        }
+      },
+      {
+        "parent": {
+          "index": 135
+        },
+        "pointer": {
+          "index": 136
+        },
+        "children": [
+          {
+            "index": 137
+          },
+          {
+            "index": 138
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 17,
+          "start_column": 7,
+          "end_row": 17,
+          "end_column": 18
+        }
+      },
+      {
+        "parent": {
+          "index": 136
+        },
+        "pointer": {
+          "index": 137
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 17,
+          "start_column": 7,
+          "end_row": 17,
+          "end_column": 8
+        }
+      },
+      {
+        "parent": {
+          "index": 136
+        },
+        "pointer": {
+          "index": 138
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 17,
+          "start_column": 8,
+          "end_row": 17,
+          "end_column": 18
+        }
+      },
+      {
+        "parent": {
+          "index": 135
+        },
+        "pointer": {
+          "index": 139
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 17,
+          "start_column": 18,
+          "end_row": 17,
+          "end_column": 23
+        }
+      },
+      {
+        "parent": {
+          "index": 131
+        },
+        "pointer": {
+          "index": 140
+        },
+        "children": [
+          {
+            "index": 141
+          },
+          {
+            "index": 144
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 17,
+          "start_column": 24,
+          "end_row": 17,
+          "end_column": 37
+        }
+      },
+      {
+        "parent": {
+          "index": 140
+        },
+        "pointer": {
+          "index": 141
+        },
+        "children": [
+          {
+            "index": 142
+          },
+          {
+            "index": 143
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 17,
+          "start_column": 24,
+          "end_row": 17,
+          "end_column": 29
+        }
+      },
+      {
+        "parent": {
+          "index": 141
+        },
+        "pointer": {
+          "index": 142
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 17,
+          "start_column": 24,
+          "end_row": 17,
+          "end_column": 25
+        }
+      },
+      {
+        "parent": {
+          "index": 141
+        },
+        "pointer": {
+          "index": 143
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 17,
+          "start_column": 25,
+          "end_row": 17,
+          "end_column": 29
+        }
+      },
+      {
+        "parent": {
+          "index": 140
+        },
+        "pointer": {
+          "index": 144
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 17,
+          "start_column": 29,
+          "end_row": 17,
+          "end_column": 37
+        }
+      },
+      {
+        "parent": {
+          "index": 1
+        },
+        "pointer": {
+          "index": 145
+        },
+        "children": [
+          {
+            "index": 146
+          },
+          {
+            "index": 148
+          },
+          {
+            "index": 149
+          },
+          {
+            "index": 154
+          }
+        ],
+        "depth": 3,
+        "name": "command",
+        "complexity": 6.240810805584212,
+        "local_complexity": 0.26295859706493774,
+        "subgraph_size": 14,
+        "syntax_span": {
+          "start_row": 18,
+          "start_column": 0,
+          "end_row": 18,
+          "end_column": 37
+        }
+      },
+      {
+        "parent": {
+          "index": 145
+        },
+        "pointer": {
+          "index": 146
+        },
+        "children": [
+          {
+            "index": 147
+          }
+        ],
+        "depth": 4,
+        "name": "command_name",
+        "complexity": 0.6075,
+        "local_complexity": 0.26442973360119776,
+        "subgraph_size": 2,
+        "syntax_span": {
+          "start_row": 18,
+          "start_column": 0,
+          "end_row": 18,
+          "end_column": 2
+        }
+      },
+      {
+        "parent": {
+          "index": 146
+        },
+        "pointer": {
+          "index": 147
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 18,
+          "start_column": 0,
+          "end_row": 18,
+          "end_column": 2
+        }
+      },
+      {
+        "parent": {
+          "index": 145
+        },
+        "pointer": {
+          "index": 148
+        },
+        "children": [],
+        "depth": 4,
+        "name": "test_operator",
+        "complexity": 0.27,
+        "local_complexity": 0.27,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 18,
+          "start_column": 3,
+          "end_row": 18,
+          "end_column": 6
+        }
+      },
+      {
+        "parent": {
+          "index": 145
+        },
+        "pointer": {
+          "index": 149
+        },
+        "children": [
+          {
+            "index": 150
+          },
+          {
+            "index": 153
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 18,
+          "start_column": 7,
+          "end_row": 18,
+          "end_column": 23
+        }
+      },
+      {
+        "parent": {
+          "index": 149
+        },
+        "pointer": {
+          "index": 150
+        },
+        "children": [
+          {
+            "index": 151
+          },
+          {
+            "index": 152
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 18,
+          "start_column": 7,
+          "end_row": 18,
+          "end_column": 18
+        }
+      },
+      {
+        "parent": {
+          "index": 150
+        },
+        "pointer": {
+          "index": 151
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 18,
+          "start_column": 7,
+          "end_row": 18,
+          "end_column": 8
+        }
+      },
+      {
+        "parent": {
+          "index": 150
+        },
+        "pointer": {
+          "index": 152
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 18,
+          "start_column": 8,
+          "end_row": 18,
+          "end_column": 18
+        }
+      },
+      {
+        "parent": {
+          "index": 149
+        },
+        "pointer": {
+          "index": 153
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 18,
+          "start_column": 18,
+          "end_row": 18,
+          "end_column": 23
+        }
+      },
+      {
+        "parent": {
+          "index": 145
+        },
+        "pointer": {
+          "index": 154
+        },
+        "children": [
+          {
+            "index": 155
+          },
+          {
+            "index": 158
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 18,
+          "start_column": 24,
+          "end_row": 18,
+          "end_column": 37
+        }
+      },
+      {
+        "parent": {
+          "index": 154
+        },
+        "pointer": {
+          "index": 155
+        },
+        "children": [
+          {
+            "index": 156
+          },
+          {
+            "index": 157
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 18,
+          "start_column": 24,
+          "end_row": 18,
+          "end_column": 29
+        }
+      },
+      {
+        "parent": {
+          "index": 155
+        },
+        "pointer": {
+          "index": 156
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 18,
+          "start_column": 24,
+          "end_row": 18,
+          "end_column": 25
+        }
+      },
+      {
+        "parent": {
+          "index": 155
+        },
+        "pointer": {
+          "index": 157
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 18,
+          "start_column": 25,
+          "end_row": 18,
+          "end_column": 29
+        }
+      },
+      {
+        "parent": {
+          "index": 154
+        },
+        "pointer": {
+          "index": 158
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 18,
+          "start_column": 29,
+          "end_row": 18,
+          "end_column": 37
+        }
+      },
+      {
+        "parent": {
+          "index": 1
+        },
+        "pointer": {
+          "index": 159
+        },
+        "children": [
+          {
+            "index": 160
+          },
+          {
+            "index": 162
+          },
+          {
+            "index": 163
+          },
+          {
+            "index": 168
+          }
+        ],
+        "depth": 3,
+        "name": "command",
+        "complexity": 6.240810805584212,
+        "local_complexity": 0.26295859706493774,
+        "subgraph_size": 14,
+        "syntax_span": {
+          "start_row": 19,
+          "start_column": 0,
+          "end_row": 19,
+          "end_column": 38
+        }
+      },
+      {
+        "parent": {
+          "index": 159
+        },
+        "pointer": {
+          "index": 160
+        },
+        "children": [
+          {
+            "index": 161
+          }
+        ],
+        "depth": 4,
+        "name": "command_name",
+        "complexity": 0.6075,
+        "local_complexity": 0.26442973360119776,
+        "subgraph_size": 2,
+        "syntax_span": {
+          "start_row": 19,
+          "start_column": 0,
+          "end_row": 19,
+          "end_column": 2
+        }
+      },
+      {
+        "parent": {
+          "index": 160
+        },
+        "pointer": {
+          "index": 161
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 19,
+          "start_column": 0,
+          "end_row": 19,
+          "end_column": 2
+        }
+      },
+      {
+        "parent": {
+          "index": 159
+        },
+        "pointer": {
+          "index": 162
+        },
+        "children": [],
+        "depth": 4,
+        "name": "test_operator",
+        "complexity": 0.27,
+        "local_complexity": 0.27,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 19,
+          "start_column": 3,
+          "end_row": 19,
+          "end_column": 6
+        }
+      },
+      {
+        "parent": {
+          "index": 159
+        },
+        "pointer": {
+          "index": 163
+        },
+        "children": [
+          {
+            "index": 164
+          },
+          {
+            "index": 167
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 19,
+          "start_column": 7,
+          "end_row": 19,
+          "end_column": 24
+        }
+      },
+      {
+        "parent": {
+          "index": 163
+        },
+        "pointer": {
+          "index": 164
+        },
+        "children": [
+          {
+            "index": 165
+          },
+          {
+            "index": 166
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 19,
+          "start_column": 7,
+          "end_row": 19,
+          "end_column": 18
+        }
+      },
+      {
+        "parent": {
+          "index": 164
+        },
+        "pointer": {
+          "index": 165
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 19,
+          "start_column": 7,
+          "end_row": 19,
+          "end_column": 8
+        }
+      },
+      {
+        "parent": {
+          "index": 164
+        },
+        "pointer": {
+          "index": 166
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 19,
+          "start_column": 8,
+          "end_row": 19,
+          "end_column": 18
+        }
+      },
+      {
+        "parent": {
+          "index": 163
+        },
+        "pointer": {
+          "index": 167
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 19,
+          "start_column": 18,
+          "end_row": 19,
+          "end_column": 24
+        }
+      },
+      {
+        "parent": {
+          "index": 159
+        },
+        "pointer": {
+          "index": 168
+        },
+        "children": [
+          {
+            "index": 169
+          },
+          {
+            "index": 172
+          }
+        ],
+        "depth": 4,
+        "name": "concatenation",
+        "complexity": 2.222874346877963,
+        "local_complexity": 0.32221882430559745,
+        "subgraph_size": 5,
+        "syntax_span": {
+          "start_row": 19,
+          "start_column": 25,
+          "end_row": 19,
+          "end_column": 38
+        }
+      },
+      {
+        "parent": {
+          "index": 168
+        },
+        "pointer": {
+          "index": 169
+        },
+        "children": [
+          {
+            "index": 170
+          },
+          {
+            "index": 171
+          }
+        ],
+        "depth": 5,
+        "name": "simple_expansion",
+        "complexity": 1.4074301927099793,
+        "local_complexity": 0.37660090365483706,
+        "subgraph_size": 3,
+        "syntax_span": {
+          "start_row": 19,
+          "start_column": 25,
+          "end_row": 19,
+          "end_column": 30
+        }
+      },
+      {
+        "parent": {
+          "index": 169
+        },
+        "pointer": {
+          "index": 170
+        },
+        "children": [],
+        "depth": 6,
+        "name": "$",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 19,
+          "start_column": 25,
+          "end_row": 19,
+          "end_column": 26
+        }
+      },
+      {
+        "parent": {
+          "index": 169
+        },
+        "pointer": {
+          "index": 171
+        },
+        "children": [],
+        "depth": 6,
+        "name": "variable_name",
+        "complexity": 0.40499999999999997,
+        "local_complexity": 0.40499999999999997,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 19,
+          "start_column": 26,
+          "end_row": 19,
+          "end_column": 30
+        }
+      },
+      {
+        "parent": {
+          "index": 168
+        },
+        "pointer": {
+          "index": 172
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 19,
+          "start_column": 30,
+          "end_row": 19,
+          "end_column": 38
+        }
+      },
+      {
+        "parent": {
+          "index": 1
+        },
+        "pointer": {
+          "index": 173
+        },
+        "children": [
+          {
+            "index": 174
+          },
+          {
+            "index": 176
+          }
+        ],
+        "depth": 3,
+        "name": "command",
+        "complexity": 1.2359581156259878,
+        "local_complexity": 0.2341702739209105,
+        "subgraph_size": 4,
+        "syntax_span": {
+          "start_row": 21,
+          "start_column": 0,
+          "end_row": 21,
+          "end_column": 12
+        }
+      },
+      {
+        "parent": {
+          "index": 173
+        },
+        "pointer": {
+          "index": 174
+        },
+        "children": [
+          {
+            "index": 175
+          }
+        ],
+        "depth": 4,
+        "name": "command_name",
+        "complexity": 0.6075,
+        "local_complexity": 0.26442973360119776,
+        "subgraph_size": 2,
+        "syntax_span": {
+          "start_row": 21,
+          "start_column": 0,
+          "end_row": 21,
+          "end_column": 4
+        }
+      },
+      {
+        "parent": {
+          "index": 174
+        },
+        "pointer": {
+          "index": 175
+        },
+        "children": [],
+        "depth": 5,
+        "name": "word",
+        "complexity": 0.3375,
+        "local_complexity": 0.3375,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 21,
+          "start_column": 0,
+          "end_row": 21,
+          "end_column": 4
+        }
+      },
+      {
+        "parent": {
+          "index": 173
+        },
+        "pointer": {
+          "index": 176
+        },
+        "children": [],
+        "depth": 4,
+        "name": "word",
+        "complexity": 0.27,
+        "local_complexity": 0.27,
+        "subgraph_size": 1,
+        "syntax_span": {
+          "start_row": 21,
+          "start_column": 5,
+          "end_row": 21,
+          "end_column": 12
+        }
+      }
+    ]
+  },
+  "_id": "setup.sh"
+}

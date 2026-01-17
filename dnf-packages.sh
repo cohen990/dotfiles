@@ -32,6 +32,9 @@ packages+=("docker-buildx-plugin")
 packages+=("docker-compose-plugin")
 packages+=("iptables-legacy")
 packages+=("perf")
+packages+=("python3")
+packages+=("python3-pip")
+packages+=("python3-jupyter-core")
 
 if [[($personal)]] ; then
     echo "Adding dependencies for a personal computer"
