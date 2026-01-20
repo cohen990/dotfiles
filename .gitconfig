@@ -4,14 +4,16 @@
 	email = samanthacohen294@gmail.com
 [alias]
 	s = status
+    sun = status --untracked-files=no
 	b = branch
 	pu = pull upstream
 	pl = pull --rebase
 	rum = remote update
 	p = push
 	please = push --force-with-lease
-	c = !git add -A && git commit
-	cm = !git add -A && git commit -m
+    c = commit --no-verify -m
+	ca = !git add -A && git commit
+	cm = !git add -A && git commit --no-verify -m 
 	g = !git gui
 	co = checkout
 	ecg = !git config --global -e
@@ -20,7 +22,7 @@
 	save = !git add -A && git commit -m 'SAVEPOINT'
 	undo = reset HEAD~1 --mixed
 	amend = !git add -A && git commit -a --amend
-	wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+	wipe = !git add -A && git commit --no-verify -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
 	bclean = "!f() { git rev-parse --abbrev-ref HEAD | xargs git branch --merged | grep -v `git rev-parse --abbrev-ref HEAD` | xargs git branch -d; }; f"
 	l = "!f() { git --no-pager log -${1-5}; }; f"
 	r = rebase
@@ -52,3 +54,10 @@
 [pager]
     branch = false
     diff = true
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[http]
+	cookiefile = /Users/samanthacohen/.gitcookies

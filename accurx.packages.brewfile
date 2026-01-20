@@ -1,7 +1,10 @@
 # Brewfile
 
 brew "go"
+brew "helm"
+brew "istioctl"
 brew "kubectl"
+brew "kubectx"
 brew "lima"
 brew "lima-additional-guestagents"
 brew "qemu"
