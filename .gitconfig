@@ -2,6 +2,10 @@
 [user]
 	name = Samantha Cohen
 	email = samanthacohen294@gmail.com
+
+# Machine-specific overrides (not tracked in git)
+[include]
+	path = ~/.gitconfig-local
 [alias]
 	s = status
     sun = status --untracked-files=no
