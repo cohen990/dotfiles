@@ -27,7 +27,8 @@ dotfiles/
 ├── i3.config             # i3 window manager config
 ├── tmux.conf             # Tmux configuration
 └── claude/               # Claude Code configuration
-    └── agents/           # Custom agents (symlinked to ~/.claude/agents)
+    ├── agents/           # Custom agents (symlinked to ~/.claude/agents)
+    └── skills/           # Custom skills (symlinked to ~/.claude/skills)
 ```
 
 ## Setup
@@ -78,6 +79,21 @@ model: sonnet
 System prompt for the agent...
 ```
 These are symlinked to `~/.claude/agents/` and available across all projects.
+
+### Adding Claude Code skills
+Create a directory in `claude/skills/<skill-name>/` with a `SKILL.md` file:
+```markdown
+---
+name: skill-name
+description: What this skill does and when to use it
+argument-hint: [optional-args]
+allowed-tools: Read, Bash
+---
+
+Skill instructions...
+Use $ARGUMENTS to access passed arguments.
+```
+Skills are invoked via `/skill-name` slash commands. Unlike agents (which run as subprocesses), skills execute in the main conversation context and can be invoked from within subagents.
 
 ## Dependencies
 

@@ -17,7 +17,7 @@
 	please = push --force-with-lease
     c = commit --no-verify -m
 	ca = !git add -A && git commit
-	cm = !git add -A && git commit --no-verify -m 
+	cm = !git add -A && git commit -m 
 	g = !git gui
 	co = checkout
 	ecg = !git config --global -e

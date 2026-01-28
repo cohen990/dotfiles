@@ -24,5 +24,6 @@ ln -fs $CONFIG_DIR/tmux.conf $HOME/.tmux.conf
 # Claude Code configuration
 mkdir -p $HOME/.claude
 ln -fs $CONFIG_DIR/claude/agents $HOME/.claude/
+ln -fs $CONFIG_DIR/claude/skills $HOME/.claude/
 
 mise install
