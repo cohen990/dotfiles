@@ -24,6 +24,7 @@ source ~/.local/share/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 source ~/.zprofile
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
 . "$HOME/.cargo/env"
 # bindkey -v
@@ -39,3 +40,12 @@ export EDITOR="vim"
 autoload -Uz compinit && compinit
 
 alias bz=~/git/boltzmann/target/release/boltzmann_analyser
+
+
+precmd() {
+    if [[ -n "$TMUX" ]]; then
+        tmux rename-window "$(basename "$PWD")"
+    fi
+}
+
+

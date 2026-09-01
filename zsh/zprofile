@@ -4,6 +4,7 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH" 
 export MSSQL_SA_PASSWORD="yourStrong(!)Password"
 export PATH="/home/samantha/.local/bin:$PATH"
+export PATH="/home/samantha/.dotnet/tools:$PATH"
 
 # Optionally, initialize Homebrew
 if command -v brew &>/dev/null; then
